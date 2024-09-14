@@ -1,0 +1,62 @@
+# Root-level .gitignore for parent folder
+
+# Ignore all node_modules and build directories across all sub-projects
+**/node_modules/
+**/build/
+
+# Ignore .DS_Store files across all directories
+**/.DS_Store
+
+# Ignore Xcode files across all projects
+**/build/
+**/*.pbxuser
+**/*.mode1v3
+**/*.mode2v3
+**/*.perspectivev3
+**/xcuserdata/
+**/*.xccheckout
+**/*.moved-aside
+**/DerivedData/
+**/*.hmap
+**/*.ipa
+**/*.xcuserstate
+**/.xcode.env.local
+
+# Ignore Android-specific files across all projects
+**/.idea/
+**/.gradle/
+**/local.properties
+**/*.iml
+**/*.hprof
+**/.cxx/
+**/*.keystore
+!**/debug.keystore
+
+# Ignore test output
+**/coverage/
+
+# Ignore Metro and Yarn files
+**/.metro-health-check*
+**/.yarn/*
+!**/.yarn/patches
+!**/.yarn/plugins
+!**/.yarn/releases
+!**/.yarn/sdks
+!**/.yarn/versions
+
+# Ignore fastlane output
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots/
+**/fastlane/test_output/
+
+# Ignore bundle artifacts
+**/*.jsbundle
+
+# Ignore Pods for CocoaPods projects
+**/Pods/
+/vendor/bundle/
+
+# Ignore temporary or log files
+npm-debug.log
+yarn-error.log
